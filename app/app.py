@@ -61,7 +61,6 @@ def home():
 def health():
     return jsonify({'status': 'ok'})
 
-
 @app.route('/visits', methods=['GET', 'POST'])
 def visits():
     conn = get_db_connection()
