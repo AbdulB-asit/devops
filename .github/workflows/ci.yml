@@ -17,6 +17,12 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Debug - list files
+      run: |
+       pwd
+       ls -la
+       find . -name "requirements.txt"
+
       - name: Install dependencies
         run: pip install pytest -r compose-lab/app/requirements.txt
 
